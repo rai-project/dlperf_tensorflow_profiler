@@ -52,18 +52,25 @@ with tf.Graph().as_default() as graph:
                       run_metadata=run_metadata, feed_dict=feed_dict_testing)
 
     ProfileOptionBuilder = tf.profiler.ProfileOptionBuilder
-    opts = (ProfileOptionBuilder(ProfileOptionBuilder.time_and_memory()).with_step(0)
-                                 .with_timeline_output("alexnet_profile.json").build())
 
-    tf.profiler.profile(
+    # profile the timing of the operations
+    opts = (ProfileOptionBuilder(ProfileOptionBuilder.time_and_memory())
+            .with_file_output("alexnet_profile.out")
+            .build())
+
+    tf.profiler.profile_operations(
         graph,
         run_meta=run_metadata,
         options=opts)
 
-    # Create the Timeline object, and write it to a json file
-    # fetched_timeline = timeline.Timeline(run_metadata.step_stats)
-    # chrome_trace = fetched_timeline.generate_chrome_trace_format()
-    # with open('timeline_01.json', 'w') as f:
-    #     f.write(chrome_trace)
+    # generate a timeline
+    opts = (ProfileOptionBuilder(ProfileOptionBuilder.time_and_memory()).with_step(0)
+            .with_timeline_output("alexnet_profile.json")
+            .build())
 
-    # print(result)
+    tf.profiler.profile_graph(
+        graph,
+        run_meta=run_metadata,
+        options=opts)
+
+# print(result)
