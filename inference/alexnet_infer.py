@@ -58,7 +58,7 @@ with tf.Graph().as_default() as graph:
             .with_file_output("alexnet_profile.out")
             .build())
 
-    tf.profiler.profile_operations(
+    tf.profiler.profile(
         graph,
         run_meta=run_metadata,
         options=opts)
@@ -68,7 +68,7 @@ with tf.Graph().as_default() as graph:
             .with_timeline_output("alexnet_profile.json")
             .build())
 
-    tf.profiler.profile_graph(
+    tf.profiler.profile(
         graph,
         run_meta=run_metadata,
         options=opts)
