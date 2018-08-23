@@ -46,10 +46,10 @@ with tf.device('/device:GPU:0'):
 	    # Creating the feed_dict that is required to be fed to calculate y_pred
 	    feed_dict_testing = {x: x_batch}
 
-sess = tf.Session(graph=graph, config=tf.ConfigProto(allow_soft_placement=False, log_device_placement=True, gpu_options = tf.GPUOptions(force_gpu_compatible=True)))
+sess = tf.Session(graph=graph, config=tf.ConfigProto(allow_soft_placement=False, log_device_placement=False, gpu_options = tf.GPUOptions(force_gpu_compatible=True)))
 
 run_metadata = tf.RunMetadata()
-result = sess.run(y_pred, feed_dict=feed_dict_testing)
+#result = sess.run(y_pred, feed_dict=feed_dict_testing)
 result = sess.run(y_pred, options=tf.RunOptions(trace_level=tf.RunOptions.FULL_TRACE),
 	      run_metadata=run_metadata, feed_dict=feed_dict_testing)
 
@@ -57,6 +57,7 @@ ProfileOptionBuilder = tf.profiler.ProfileOptionBuilder
 
 # profile the timing of the operations
 opts = (ProfileOptionBuilder(ProfileOptionBuilder.time_and_memory())
+    .select(['accelerator_micros'])
     .with_file_output("alexnet_profile.out")
     .build())
 
@@ -67,6 +68,7 @@ options=opts)
 
 # generate a timeline
 opts = (ProfileOptionBuilder(ProfileOptionBuilder.time_and_memory()).with_step(0)
+    .select(['accelerator_micros'])
     .with_timeline_output("alexnet_profile.json")
     .build())
 
