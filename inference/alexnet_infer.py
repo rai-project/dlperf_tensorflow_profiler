@@ -52,23 +52,29 @@ run_metadata = tf.RunMetadata()
 result = sess.run(y_pred, feed_dict=feed_dict_testing)
 result = sess.run(y_pred, options=tf.RunOptions(trace_level=tf.RunOptions.FULL_TRACE),
 	      run_metadata=run_metadata, feed_dict=feed_dict_testing)
+# Create the Timeline object, and write it to a json
+tl = timeline.Timeline(run_metadata.step_stats)
+ctf = tl.generate_chrome_trace_format(show_dataflow=True, show_memory=True)
+with open('timeline.json', 'w') as f:
+	f.write(ctf)
 
 ProfileOptionBuilder = tf.profiler.ProfileOptionBuilder
 
 # profile the timing of the operations
 opts = (ProfileOptionBuilder(ProfileOptionBuilder.time_and_memory())
-    .select(['accelerator_micros'])
+    .select(['accelerator_micros', 'micros', 'bytes', 'float_ops'])
     .with_file_output("alexnet_profile.out")
     .build())
 
 tf.profiler.profile(
 	graph,
+	cmd='code',
 	run_meta=run_metadata,
 	options=opts)
 
 # generate a timeline
 opts = (ProfileOptionBuilder(ProfileOptionBuilder.time_and_memory()).with_step(0)
-    .select(['accelerator_micros'])
+    .select(['accelerator_micros', 'micros', 'bytes', 'float_ops'])
     .with_timeline_output("alexnet_profile.json")
     .build())
 
@@ -79,8 +85,3 @@ options=opts)
 
 # print(result)
 
-# Create the Timeline object, and write it to a json
-tl = timeline.Timeline(run_metadata.step_stats)
-ctf = tl.generate_chrome_trace_format()
-with open('timeline.json', 'w') as f:
-	f.write(ctf)
