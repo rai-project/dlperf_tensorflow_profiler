@@ -25,7 +25,7 @@ images = np.multiply(images, 1.0/255.0)
 x_batch = images.reshape(1, image_size, image_size, num_channels)
 
 
-frozen_graph = "./alexnet.pb"
+frozen_graph = "../alexnet.pb"
 with tf.gfile.GFile(frozen_graph, "rb") as f:
     graph_def = tf.GraphDef()
     graph_def.ParseFromString(f.read())
@@ -54,15 +54,11 @@ with tf.Graph().as_default() as graph:
 
     ProfileOptionBuilder = tf.profiler.ProfileOptionBuilder
     opts = (ProfileOptionBuilder(ProfileOptionBuilder.time_and_memory()).
-            with_file_output('profile_alexnet.out').
-            with_node_names(show_name_regexes=['.*alexnet_infer.py.*']).
             build())
 
     tf.profiler.profile(
         graph,
         run_meta=run_metadata,
-        cmd='code',
         options=opts)
 
-# result is of this format [probabiliy_of_cats probability_of_dogs]
-    print(result)
+    # print(result)
