@@ -25,11 +25,11 @@ x_batch = images.reshape(1, image_size, image_size, num_channels)
 
 
 frozen_graph = "../alexnet.pb"
-with tf.gfile.GFile(frozen_graph, "rb") as f:
-    graph_def = tf.GraphDef()
-    graph_def.ParseFromString(f.read())
-
 with tf.device('/device:GPU:0'):
+	with tf.gfile.GFile(frozen_graph, "rb") as f:
+	    graph_def = tf.GraphDef()
+	    graph_def.ParseFromString(f.read())
+
 	with tf.Graph().as_default() as graph:
 	    tf.import_graph_def(
 		graph_def,
@@ -46,7 +46,7 @@ with tf.device('/device:GPU:0'):
 	    # Creating the feed_dict that is required to be fed to calculate y_pred
 	    feed_dict_testing = {x: x_batch}
 
-sess = tf.Session(graph=graph, config=tf.ConfigProto(allow_soft_placement=False, log_device_placement=True))
+sess = tf.Session(graph=graph, config=tf.ConfigProto(allow_soft_placement=False, log_device_placement=True, gpu_options = tf.GPUOptions(force_gpu_compatible=True)))
 
 run_metadata = tf.RunMetadata()
 result = sess.run(y_pred, options=tf.RunOptions(trace_level=tf.RunOptions.FULL_TRACE),
