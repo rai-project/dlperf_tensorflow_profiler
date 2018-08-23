@@ -45,6 +45,7 @@ with tf.Graph().as_default() as graph:
     # Creating the feed_dict that is required to be fed to calculate y_pred
     feed_dict_testing = {x: x_batch}
 
+with tf.device('/device:GPU:0'):
     sess = tf.Session(graph=graph)
 
     run_metadata = tf.RunMetadata()
@@ -74,3 +75,4 @@ with tf.Graph().as_default() as graph:
         options=opts)
 
 # print(result)
+
