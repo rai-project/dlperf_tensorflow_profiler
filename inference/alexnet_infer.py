@@ -1,7 +1,6 @@
 import tensorflow as tf
 import os
 import numpy as np
-import os
 import glob
 import cv2
 import sys
@@ -44,33 +43,26 @@ with tf.Graph().as_default() as graph:
     y_pred = graph.get_tensor_by_name("prob:0")
     x = graph.get_tensor_by_name("data:0")
 
-    sess = tf.Session(graph=graph)
-
     # Creating the feed_dict that is required to be fed to calculate y_pred
     feed_dict_testing = {x: x_batch}
 
-    # Create profiler
-    profiler = tf.profiler.Profiler(sess.graph)
-    options = tf.RunOptions(trace_level=tf.RunOptions.FULL_TRACE)
-    run_metadata = tf.RunMetadata()
+    sess = tf.Session(graph=graph)
 
-    result = sess.run(y_pred, options=options,
+    run_metadata = tf.RunMetadata()
+    result = sess.run(y_pred, options=tf.RunOptions(trace_level=tf.RunOptions.FULL_TRACE),
                       run_metadata=run_metadata, feed_dict=feed_dict_testing)
 
-    profiler.add_step(0, run_metadata)
-
-    # Generate profile
-    option_builder = tf.profiler.ProfileOptionBuilder
-    opts = (option_builder(option_builder.time_and_memory()).
-            # with -1, should compute the average of all registered steps.
-            with_step(-1).
+    ProfileOptionBuilder = tf.profiler.ProfileOptionBuilder
+    opts = (ProfileOptionBuilder(ProfileOptionBuilder.time_and_memory()).
             with_file_output('profile_alexnet.out').
-            select(['micros', 'bytes', 'occurrence']).order_by('micros').
+            with_node_names(show_name_regexes=['.*alexnet_infer.py.*']).
             build())
 
-    profiler.profile_operations(options=opts)
-
+    tf.profiler.profile(
+        graph,
+        run_meta=run_metadata,
+        cmd='code',
+        options=opts)
 
 # result is of this format [probabiliy_of_cats probability_of_dogs]
     print(result)
-
