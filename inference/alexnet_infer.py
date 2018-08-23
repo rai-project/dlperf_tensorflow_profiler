@@ -25,6 +25,7 @@ x_batch = images.reshape(1, image_size, image_size, num_channels)
 
 
 frozen_graph  = "../alexnet.pb"
+frozen_graph = "../ssd_inception_v2_coco_2018_01_28/frozen_inference_graph.pb"
 with tf.device('/device:GPU:0'):
 
 	with tf.gfile.GFile(frozen_graph, "rb") as f:
@@ -42,8 +43,10 @@ with tf.device('/device:GPU:0'):
 		# producer_op_list=None
 	    )
 
-	    y_pred = graph.get_tensor_by_name("prob:0")
-	    x = graph.get_tensor_by_name("data:0")
+	    #y_pred = graph.get_tensor_by_name("prob:0")
+	    y_pred = graph.get_tensor_by_name("detection_boxes:0")
+	    #x = graph.get_tensor_by_name("data:0")
+	    x = graph.get_tensor_by_name("image_tensor:0")
 
 	    # Creating the feed_dict that is required to be fed to calculate y_pred
 	    feed_dict_testing = {x: x_batch}

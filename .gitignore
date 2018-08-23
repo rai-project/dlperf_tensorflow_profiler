@@ -689,3 +689,4 @@ paket-files/
 
 *.pb
 *.onnx
+ssd*
