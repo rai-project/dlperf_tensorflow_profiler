@@ -49,7 +49,7 @@ with tf.device('/device:GPU:0'):
 sess = tf.Session(graph=graph, config=tf.ConfigProto(allow_soft_placement=False, log_device_placement=True, gpu_options = tf.GPUOptions(force_gpu_compatible=True)))
 
 run_metadata = tf.RunMetadata()
-#result = sess.run(y_pred, feed_dict=feed_dict_testing)
+result = sess.run(y_pred, feed_dict=feed_dict_testing)
 result = sess.run(y_pred, options=tf.RunOptions(trace_level=tf.RunOptions.FULL_TRACE),
 	      run_metadata=run_metadata, feed_dict=feed_dict_testing)
 
@@ -77,3 +77,8 @@ options=opts)
 
 # print(result)
 
+# Create the Timeline object, and write it to a json
+tl = timeline.Timeline(run_metadata.step_stats)
+ctf = tl.generate_chrome_trace_format()
+with open('timeline.json', 'w') as f:
+	f.write(ctf)

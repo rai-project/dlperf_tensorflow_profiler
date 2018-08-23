@@ -1,0 +1,3826 @@
+{
+    "traceEvents": [
+        {
+            "ph": "M",
+            "args": {
+                "name": "Allocators"
+            },
+            "pid": 0,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/device:GPU:0/stream:15 Compute"
+            },
+            "pid": 1,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/device:GPU:0/stream:15 Tensors"
+            },
+            "pid": 2,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/device:GPU:0/stream:14 Compute"
+            },
+            "pid": 3,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/device:GPU:0/stream:14 Tensors"
+            },
+            "pid": 4,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/device:GPU:0/memcpy Compute"
+            },
+            "pid": 5,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/device:GPU:0/memcpy Tensors"
+            },
+            "pid": 6,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/device:GPU:0/stream:all Compute"
+            },
+            "pid": 7,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/device:GPU:0/stream:all Tensors"
+            },
+            "pid": 8,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/device:GPU:0/stream:13 Compute"
+            },
+            "pid": 9,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/device:GPU:0/stream:13 Tensors"
+            },
+            "pid": 10,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:GPU:0 Compute"
+            },
+            "pid": 11,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:GPU:0 Tensors"
+            },
+            "pid": 12,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Compute"
+            },
+            "pid": 13,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Tensors"
+            },
+            "pid": 14,
+            "name": "process_name"
+        },
+        {
+            "name": "MEMCPYDtoH",
+            "args": {
+                "name": "edge_15_PadV2/constant_values",
+                "op": "MEMCPYDtoH"
+            },
+            "pid": 1,
+            "ts": 1535045464571197,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "MEMCPYDtoH",
+            "args": {
+                "name": "edge_162_prob",
+                "op": "MEMCPYDtoH"
+            },
+            "pid": 1,
+            "ts": 1535045464574090,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "MEMCPYHtoD",
+            "args": {
+                "name": "edge_161__arg_data_0_0",
+                "op": "MEMCPYHtoD"
+            },
+            "pid": 3,
+            "ts": 1535045464571098,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 77
+        },
+        {
+            "name": "MEMCPYHtoD",
+            "args": {
+                "name": "edge_161__arg_data_0_0",
+                "op": "MEMCPYHtoD"
+            },
+            "pid": 5,
+            "ts": 1535045464571098,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 77
+        },
+        {
+            "name": "MEMCPYDtoH",
+            "args": {
+                "name": "edge_15_PadV2/constant_values",
+                "op": "MEMCPYDtoH"
+            },
+            "pid": 5,
+            "ts": 1535045464571197,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "ConcatV2",
+            "args": {
+                "name": "concat",
+                "op": "ConcatV2"
+            },
+            "pid": 5,
+            "ts": 1535045464572342,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 1
+        },
+        {
+            "name": "ConcatV2",
+            "args": {
+                "name": "concat",
+                "op": "ConcatV2"
+            },
+            "pid": 5,
+            "ts": 1535045464572348,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 1
+        },
+        {
+            "name": "ConcatV2",
+            "args": {
+                "name": "concat_1",
+                "op": "ConcatV2"
+            },
+            "pid": 5,
+            "ts": 1535045464573061,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "ConcatV2",
+            "args": {
+                "name": "concat_1",
+                "op": "ConcatV2"
+            },
+            "pid": 5,
+            "ts": 1535045464573066,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "ConcatV2",
+            "args": {
+                "name": "concat_2",
+                "op": "ConcatV2"
+            },
+            "pid": 5,
+            "ts": 1535045464573352,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 1
+        },
+        {
+            "name": "ConcatV2",
+            "args": {
+                "name": "concat_2",
+                "op": "ConcatV2"
+            },
+            "pid": 5,
+            "ts": 1535045464573357,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 1
+        },
+        {
+            "name": "MEMCPYDtoH",
+            "args": {
+                "name": "edge_162_prob",
+                "op": "MEMCPYDtoH"
+            },
+            "pid": 5,
+            "ts": 1535045464574090,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Pad",
+            "args": {
+                "name": "Pad",
+                "op": "Pad"
+            },
+            "pid": 7,
+            "ts": 1535045464571436,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 12
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "name": "convolution-0-TransposeNHWCToNCHW-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 7,
+            "ts": 1535045464571460,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 9
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464571511,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464571591,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464571617,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 58
+        },
+        {
+            "name": "Add",
+            "args": {
+                "name": "add",
+                "op": "Add"
+            },
+            "pid": 7,
+            "ts": 1535045464571681,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "name": "relu1",
+                "op": "Relu"
+            },
+            "pid": 7,
+            "ts": 1535045464571714,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "name": "relu1-0-0-TransposeNCHWToNHWC-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 7,
+            "ts": 1535045464571741,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "LRN",
+            "args": {
+                "name": "norm1",
+                "op": "LRN"
+            },
+            "pid": 7,
+            "ts": 1535045464571786,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 59
+        },
+        {
+            "name": "PadV2",
+            "args": {
+                "name": "PadV2",
+                "op": "PadV2"
+            },
+            "pid": 7,
+            "ts": 1535045464571849,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "name": "pool1-0-TransposeNHWCToNCHW-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 7,
+            "ts": 1535045464571858,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "MaxPool",
+            "args": {
+                "name": "pool1",
+                "op": "MaxPool"
+            },
+            "pid": 7,
+            "ts": 1535045464571905,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "Pad",
+            "args": {
+                "name": "Pad_1",
+                "op": "Pad"
+            },
+            "pid": 7,
+            "ts": 1535045464571944,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "Split",
+            "args": {
+                "name": "split_1",
+                "op": "Split"
+            },
+            "pid": 7,
+            "ts": 1535045464571986,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 14
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_1",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464572024,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_1",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464572055,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 20
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_1",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464572079,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_1",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464572095,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 58
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_1",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464572156,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 31
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_2",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464572192,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_2",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464572204,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 21
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_2",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464572229,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 12
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_2",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464572244,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 58
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_2",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464572307,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 32
+        },
+        {
+            "name": "Add",
+            "args": {
+                "name": "add_1",
+                "op": "Add"
+            },
+            "pid": 7,
+            "ts": 1535045464572355,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "name": "relu2",
+                "op": "Relu"
+            },
+            "pid": 7,
+            "ts": 1535045464572364,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "name": "relu2-0-0-TransposeNCHWToNHWC-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 7,
+            "ts": 1535045464572372,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "LRN",
+            "args": {
+                "name": "norm2",
+                "op": "LRN"
+            },
+            "pid": 7,
+            "ts": 1535045464572387,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 139
+        },
+        {
+            "name": "PadV2",
+            "args": {
+                "name": "PadV2_1",
+                "op": "PadV2"
+            },
+            "pid": 7,
+            "ts": 1535045464572530,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "name": "pool2-0-TransposeNHWCToNCHW-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 7,
+            "ts": 1535045464572541,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "MaxPool",
+            "args": {
+                "name": "pool2",
+                "op": "MaxPool"
+            },
+            "pid": 7,
+            "ts": 1535045464572550,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "Pad",
+            "args": {
+                "name": "Pad_2",
+                "op": "Pad"
+            },
+            "pid": 7,
+            "ts": 1535045464572560,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 9
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_3",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464572573,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 25
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_3",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464572601,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_3",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464572619,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 134
+        },
+        {
+            "name": "Add",
+            "args": {
+                "name": "add_2",
+                "op": "Add"
+            },
+            "pid": 7,
+            "ts": 1535045464572756,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "name": "relu3",
+                "op": "Relu"
+            },
+            "pid": 7,
+            "ts": 1535045464572765,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Pad",
+            "args": {
+                "name": "Pad_3",
+                "op": "Pad"
+            },
+            "pid": 7,
+            "ts": 1535045464572773,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 9
+        },
+        {
+            "name": "Split",
+            "args": {
+                "name": "split_3",
+                "op": "Split"
+            },
+            "pid": 7,
+            "ts": 1535045464572787,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_4",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464572801,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_4",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464572817,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_4",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464572829,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 101
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_5",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464572933,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_5",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464572950,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_5",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464572960,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 98
+        },
+        {
+            "name": "Add",
+            "args": {
+                "name": "add_3",
+                "op": "Add"
+            },
+            "pid": 7,
+            "ts": 1535045464573071,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "name": "relu4",
+                "op": "Relu"
+            },
+            "pid": 7,
+            "ts": 1535045464573081,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Pad",
+            "args": {
+                "name": "Pad_4",
+                "op": "Pad"
+            },
+            "pid": 7,
+            "ts": 1535045464573089,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "Split",
+            "args": {
+                "name": "split_5",
+                "op": "Split"
+            },
+            "pid": 7,
+            "ts": 1535045464573101,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 12
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_6",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464573116,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_6",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464573130,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 16
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_6",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464573150,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_6",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464573164,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 53
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_6",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464573220,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_7",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464573234,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_7",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464573249,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 16
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_7",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464573269,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 9
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_7",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464573281,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 51
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_7",
+                "op": "Conv2D"
+            },
+            "pid": 7,
+            "ts": 1535045464573337,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11
+        },
+        {
+            "name": "Add",
+            "args": {
+                "name": "add_4",
+                "op": "Add"
+            },
+            "pid": 7,
+            "ts": 1535045464573363,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "name": "relu5",
+                "op": "Relu"
+            },
+            "pid": 7,
+            "ts": 1535045464573377,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "name": "relu5-0-0-TransposeNCHWToNHWC-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 7,
+            "ts": 1535045464573403,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "PadV2",
+            "args": {
+                "name": "PadV2_2",
+                "op": "PadV2"
+            },
+            "pid": 7,
+            "ts": 1535045464573442,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "name": "pool5-0-TransposeNHWCToNCHW-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 7,
+            "ts": 1535045464573473,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "MaxPool",
+            "args": {
+                "name": "pool5",
+                "op": "MaxPool"
+            },
+            "pid": 7,
+            "ts": 1535045464573517,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "name": "pool5-0-0-TransposeNCHWToNHWC-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 7,
+            "ts": 1535045464573547,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "MatMul",
+            "args": {
+                "name": "dense/MatMul",
+                "op": "MatMul"
+            },
+            "pid": 7,
+            "ts": 1535045464573678,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 205
+        },
+        {
+            "name": "BiasAdd",
+            "args": {
+                "name": "dense/BiasAdd",
+                "op": "BiasAdd"
+            },
+            "pid": 7,
+            "ts": 1535045464573886,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "name": "relu6",
+                "op": "Relu"
+            },
+            "pid": 7,
+            "ts": 1535045464573895,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "MatMul",
+            "args": {
+                "name": "dense_2/MatMul",
+                "op": "MatMul"
+            },
+            "pid": 7,
+            "ts": 1535045464573903,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 89
+        },
+        {
+            "name": "BiasAdd",
+            "args": {
+                "name": "dense_2/BiasAdd",
+                "op": "BiasAdd"
+            },
+            "pid": 7,
+            "ts": 1535045464573996,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "name": "relu7",
+                "op": "Relu"
+            },
+            "pid": 7,
+            "ts": 1535045464574003,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "MatMul",
+            "args": {
+                "name": "dense_3/MatMul",
+                "op": "MatMul"
+            },
+            "pid": 7,
+            "ts": 1535045464574010,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 44
+        },
+        {
+            "name": "BiasAdd",
+            "args": {
+                "name": "dense_3/BiasAdd",
+                "op": "BiasAdd"
+            },
+            "pid": 7,
+            "ts": 1535045464574058,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Softmax",
+            "args": {
+                "name": "prob",
+                "op": "Softmax"
+            },
+            "pid": 7,
+            "ts": 1535045464574065,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Softmax",
+            "args": {
+                "name": "prob",
+                "op": "Softmax"
+            },
+            "pid": 7,
+            "ts": 1535045464574073,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 9
+        },
+        {
+            "name": "Softmax",
+            "args": {
+                "name": "prob",
+                "op": "Softmax"
+            },
+            "pid": 7,
+            "ts": 1535045464574086,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Pad",
+            "args": {
+                "name": "Pad",
+                "op": "Pad"
+            },
+            "pid": 9,
+            "ts": 1535045464571436,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 12
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "name": "convolution-0-TransposeNHWCToNCHW-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 9,
+            "ts": 1535045464571460,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 9
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464571511,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464571591,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464571617,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 58
+        },
+        {
+            "name": "Add",
+            "args": {
+                "name": "add",
+                "op": "Add"
+            },
+            "pid": 9,
+            "ts": 1535045464571681,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "name": "relu1",
+                "op": "Relu"
+            },
+            "pid": 9,
+            "ts": 1535045464571714,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "name": "relu1-0-0-TransposeNCHWToNHWC-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 9,
+            "ts": 1535045464571741,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "LRN",
+            "args": {
+                "name": "norm1",
+                "op": "LRN"
+            },
+            "pid": 9,
+            "ts": 1535045464571786,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 59
+        },
+        {
+            "name": "PadV2",
+            "args": {
+                "name": "PadV2",
+                "op": "PadV2"
+            },
+            "pid": 9,
+            "ts": 1535045464571849,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "name": "pool1-0-TransposeNHWCToNCHW-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 9,
+            "ts": 1535045464571858,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "MaxPool",
+            "args": {
+                "name": "pool1",
+                "op": "MaxPool"
+            },
+            "pid": 9,
+            "ts": 1535045464571905,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "Pad",
+            "args": {
+                "name": "Pad_1",
+                "op": "Pad"
+            },
+            "pid": 9,
+            "ts": 1535045464571944,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "Split",
+            "args": {
+                "name": "split_1",
+                "op": "Split"
+            },
+            "pid": 9,
+            "ts": 1535045464571986,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 14
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_1",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464572024,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_1",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464572055,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 20
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_1",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464572079,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_1",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464572095,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 58
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_1",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464572156,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 31
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_2",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464572192,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_2",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464572204,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 21
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_2",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464572229,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 12
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_2",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464572244,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 58
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_2",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464572307,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 32
+        },
+        {
+            "name": "Add",
+            "args": {
+                "name": "add_1",
+                "op": "Add"
+            },
+            "pid": 9,
+            "ts": 1535045464572355,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "name": "relu2",
+                "op": "Relu"
+            },
+            "pid": 9,
+            "ts": 1535045464572364,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "name": "relu2-0-0-TransposeNCHWToNHWC-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 9,
+            "ts": 1535045464572372,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "LRN",
+            "args": {
+                "name": "norm2",
+                "op": "LRN"
+            },
+            "pid": 9,
+            "ts": 1535045464572387,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 139
+        },
+        {
+            "name": "PadV2",
+            "args": {
+                "name": "PadV2_1",
+                "op": "PadV2"
+            },
+            "pid": 9,
+            "ts": 1535045464572530,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "name": "pool2-0-TransposeNHWCToNCHW-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 9,
+            "ts": 1535045464572541,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "MaxPool",
+            "args": {
+                "name": "pool2",
+                "op": "MaxPool"
+            },
+            "pid": 9,
+            "ts": 1535045464572550,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "Pad",
+            "args": {
+                "name": "Pad_2",
+                "op": "Pad"
+            },
+            "pid": 9,
+            "ts": 1535045464572560,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 9
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_3",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464572573,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 25
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_3",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464572601,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_3",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464572619,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 134
+        },
+        {
+            "name": "Add",
+            "args": {
+                "name": "add_2",
+                "op": "Add"
+            },
+            "pid": 9,
+            "ts": 1535045464572756,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "name": "relu3",
+                "op": "Relu"
+            },
+            "pid": 9,
+            "ts": 1535045464572765,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Pad",
+            "args": {
+                "name": "Pad_3",
+                "op": "Pad"
+            },
+            "pid": 9,
+            "ts": 1535045464572773,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 9
+        },
+        {
+            "name": "Split",
+            "args": {
+                "name": "split_3",
+                "op": "Split"
+            },
+            "pid": 9,
+            "ts": 1535045464572787,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_4",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464572801,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_4",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464572817,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_4",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464572829,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 101
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_5",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464572933,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_5",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464572950,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_5",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464572960,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 98
+        },
+        {
+            "name": "Add",
+            "args": {
+                "name": "add_3",
+                "op": "Add"
+            },
+            "pid": 9,
+            "ts": 1535045464573071,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "name": "relu4",
+                "op": "Relu"
+            },
+            "pid": 9,
+            "ts": 1535045464573081,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Pad",
+            "args": {
+                "name": "Pad_4",
+                "op": "Pad"
+            },
+            "pid": 9,
+            "ts": 1535045464573089,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "Split",
+            "args": {
+                "name": "split_5",
+                "op": "Split"
+            },
+            "pid": 9,
+            "ts": 1535045464573101,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 12
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_6",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464573116,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_6",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464573130,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 16
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_6",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464573150,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_6",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464573164,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 53
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_6",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464573220,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_7",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464573234,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_7",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464573249,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 16
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_7",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464573269,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 9
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_7",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464573281,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 51
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "name": "convolution_7",
+                "op": "Conv2D"
+            },
+            "pid": 9,
+            "ts": 1535045464573337,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11
+        },
+        {
+            "name": "Add",
+            "args": {
+                "name": "add_4",
+                "op": "Add"
+            },
+            "pid": 9,
+            "ts": 1535045464573363,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "name": "relu5",
+                "op": "Relu"
+            },
+            "pid": 9,
+            "ts": 1535045464573377,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "name": "relu5-0-0-TransposeNCHWToNHWC-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 9,
+            "ts": 1535045464573403,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "PadV2",
+            "args": {
+                "name": "PadV2_2",
+                "op": "PadV2"
+            },
+            "pid": 9,
+            "ts": 1535045464573442,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "name": "pool5-0-TransposeNHWCToNCHW-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 9,
+            "ts": 1535045464573473,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "MaxPool",
+            "args": {
+                "name": "pool5",
+                "op": "MaxPool"
+            },
+            "pid": 9,
+            "ts": 1535045464573517,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "name": "pool5-0-0-TransposeNCHWToNHWC-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 9,
+            "ts": 1535045464573547,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "MatMul",
+            "args": {
+                "name": "dense/MatMul",
+                "op": "MatMul"
+            },
+            "pid": 9,
+            "ts": 1535045464573678,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 205
+        },
+        {
+            "name": "BiasAdd",
+            "args": {
+                "name": "dense/BiasAdd",
+                "op": "BiasAdd"
+            },
+            "pid": 9,
+            "ts": 1535045464573886,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "name": "relu6",
+                "op": "Relu"
+            },
+            "pid": 9,
+            "ts": 1535045464573895,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "MatMul",
+            "args": {
+                "name": "dense_2/MatMul",
+                "op": "MatMul"
+            },
+            "pid": 9,
+            "ts": 1535045464573903,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 89
+        },
+        {
+            "name": "BiasAdd",
+            "args": {
+                "name": "dense_2/BiasAdd",
+                "op": "BiasAdd"
+            },
+            "pid": 9,
+            "ts": 1535045464573996,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "name": "relu7",
+                "op": "Relu"
+            },
+            "pid": 9,
+            "ts": 1535045464574003,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "MatMul",
+            "args": {
+                "name": "dense_3/MatMul",
+                "op": "MatMul"
+            },
+            "pid": 9,
+            "ts": 1535045464574010,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 44
+        },
+        {
+            "name": "BiasAdd",
+            "args": {
+                "name": "dense_3/BiasAdd",
+                "op": "BiasAdd"
+            },
+            "pid": 9,
+            "ts": 1535045464574058,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Softmax",
+            "args": {
+                "name": "prob",
+                "op": "Softmax"
+            },
+            "pid": 9,
+            "ts": 1535045464574065,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Softmax",
+            "args": {
+                "name": "prob",
+                "op": "Softmax"
+            },
+            "pid": 9,
+            "ts": 1535045464574073,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 9
+        },
+        {
+            "name": "Softmax",
+            "args": {
+                "name": "prob",
+                "op": "Softmax"
+            },
+            "pid": 9,
+            "ts": 1535045464574086,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "ConcatV2",
+            "args": {
+                "name": "concat",
+                "op": "ConcatV2"
+            },
+            "pid": 9,
+            "ts": 1535045464572342,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 1
+        },
+        {
+            "name": "ConcatV2",
+            "args": {
+                "name": "concat",
+                "op": "ConcatV2"
+            },
+            "pid": 9,
+            "ts": 1535045464572348,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 1
+        },
+        {
+            "name": "ConcatV2",
+            "args": {
+                "name": "concat_1",
+                "op": "ConcatV2"
+            },
+            "pid": 9,
+            "ts": 1535045464573061,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "ConcatV2",
+            "args": {
+                "name": "concat_1",
+                "op": "ConcatV2"
+            },
+            "pid": 9,
+            "ts": 1535045464573066,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "ConcatV2",
+            "args": {
+                "name": "concat_2",
+                "op": "ConcatV2"
+            },
+            "pid": 9,
+            "ts": 1535045464573352,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 1
+        },
+        {
+            "name": "ConcatV2",
+            "args": {
+                "name": "concat_2",
+                "op": "ConcatV2"
+            },
+            "pid": 9,
+            "ts": 1535045464573357,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 1
+        },
+        {
+            "name": "NoOp",
+            "args": {
+                "name": "_SOURCE",
+                "op": "NoOp"
+            },
+            "pid": 11,
+            "ts": 1535045464570157,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 735
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "ConstantFolding/split_4-folded-0",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464570908,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 19
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "split_5-0-LayoutOptimizer",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464570929,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "ConstantFolding/split_2-folded-0",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464570937,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "ConstantFolding/split-folded-0",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464570947,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "conv1_weight",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464570954,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "add-1-ReshapeNHWCToNCHW-LayoutOptimizer",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464570963,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "Pad_1-1-LayoutOptimizer",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464570970,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "ConstantFolding/split-folded-1",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464570976,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "dense_2/kernel",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464570985,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "add_1-1-ReshapeNHWCToNCHW-LayoutOptimizer",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464570991,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "Pad_2-1-LayoutOptimizer",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464570998,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "conv3_weight",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464571006,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "add_2-1-ReshapeNHWCToNCHW-LayoutOptimizer",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464571012,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "ConstantFolding/split_2-folded-1",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464571020,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "dense_2/bias",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464571027,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "add_3-1-ReshapeNHWCToNCHW-LayoutOptimizer",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464571033,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "ConstantFolding/split_4-folded-1",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464571042,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "add_4-1-ReshapeNHWCToNCHW-LayoutOptimizer",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464571049,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "PermConstNCHWToNHWC-LayoutOptimizer",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464571055,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "Pad/paddings",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464571064,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "PadV2/constant_values",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464571070,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "PermConstNHWCToNCHW-LayoutOptimizer",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464571076,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "dense/kernel",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464571083,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "dense/bias",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464571090,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "dense_1/kernel",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464571095,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "dense_1/bias",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464571104,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "Flatten/flatten/strided_slice/stack",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464571110,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "Flatten/flatten/strided_slice/stack_1",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464571118,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "split_5/split_dim",
+                "op": "Const"
+            },
+            "pid": 11,
+            "ts": 1535045464571123,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Pad",
+            "args": {
+                "input0": "_arg_data_0_0/_1",
+                "input1": "Pad/paddings",
+                "name": "Pad",
+                "op": "Pad"
+            },
+            "pid": 11,
+            "ts": 1535045464571304,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 95
+        },
+        {
+            "name": "_arg_data_0_0",
+            "pid": 13,
+            "ts": 1535045464570224,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 0
+        },
+        {
+            "name": "_arg_data_0_0",
+            "pid": 11,
+            "ts": 1535045464571304,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 0
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "input0": "Pad",
+                "input1": "PermConstNHWCToNCHW-LayoutOptimizer",
+                "name": "convolution-0-TransposeNHWCToNCHW-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 11,
+            "ts": 1535045464571417,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 49
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "input0": "convolution-0-TransposeNHWCToNCHW-LayoutOptimizer",
+                "input1": "conv1_weight",
+                "name": "convolution",
+                "op": "Conv2D"
+            },
+            "pid": 11,
+            "ts": 1535045464571472,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 162
+        },
+        {
+            "name": "Add",
+            "args": {
+                "input0": "convolution",
+                "input1": "add-1-ReshapeNHWCToNCHW-LayoutOptimizer",
+                "name": "add",
+                "op": "Add"
+            },
+            "pid": 11,
+            "ts": 1535045464571642,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 41
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "input0": "add",
+                "name": "relu1",
+                "op": "Relu"
+            },
+            "pid": 11,
+            "ts": 1535045464571686,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 28
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "input0": "relu1",
+                "input1": "PermConstNCHWToNHWC-LayoutOptimizer",
+                "name": "relu1-0-0-TransposeNCHWToNHWC-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 11,
+            "ts": 1535045464571717,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 27
+        },
+        {
+            "name": "LRN",
+            "args": {
+                "input0": "relu1-0-0-TransposeNCHWToNHWC-LayoutOptimizer",
+                "name": "norm1",
+                "op": "LRN"
+            },
+            "pid": 11,
+            "ts": 1535045464571749,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 40
+        },
+        {
+            "name": "PadV2",
+            "args": {
+                "input2": "PadV2/constant_values/_3",
+                "input0": "norm1",
+                "input1": "Pad/paddings",
+                "name": "PadV2",
+                "op": "PadV2"
+            },
+            "pid": 11,
+            "ts": 1535045464571794,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 31
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "input0": "PadV2",
+                "input1": "PermConstNHWCToNCHW-LayoutOptimizer",
+                "name": "pool1-0-TransposeNHWCToNCHW-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 11,
+            "ts": 1535045464571831,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 28
+        },
+        {
+            "name": "MaxPool",
+            "args": {
+                "input0": "pool1-0-TransposeNHWCToNCHW-LayoutOptimizer",
+                "name": "pool1",
+                "op": "MaxPool"
+            },
+            "pid": 11,
+            "ts": 1535045464571864,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 45
+        },
+        {
+            "name": "Pad",
+            "args": {
+                "input0": "pool1",
+                "input1": "Pad_1-1-LayoutOptimizer",
+                "name": "Pad_1",
+                "op": "Pad"
+            },
+            "pid": 11,
+            "ts": 1535045464571914,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 38
+        },
+        {
+            "name": "Split",
+            "args": {
+                "input0": "split_5-0-LayoutOptimizer",
+                "input1": "Pad_1",
+                "name": "split_1",
+                "op": "Split"
+            },
+            "pid": 11,
+            "ts": 1535045464571958,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 31
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "input0": "split_1",
+                "input1": "ConstantFolding/split-folded-0",
+                "name": "convolution_1",
+                "op": "Conv2D"
+            },
+            "pid": 11,
+            "ts": 1535045464571994,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 110
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "input0": "split_1:1",
+                "input1": "ConstantFolding/split-folded-1",
+                "name": "convolution_2",
+                "op": "Conv2D"
+            },
+            "pid": 11,
+            "ts": 1535045464572112,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 94
+        },
+        {
+            "name": "ConcatV2",
+            "args": {
+                "input2": "split_5-0-LayoutOptimizer",
+                "input0": "convolution_1",
+                "input1": "convolution_2",
+                "name": "concat",
+                "op": "ConcatV2"
+            },
+            "pid": 11,
+            "ts": 1535045464572213,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 54
+        },
+        {
+            "name": "Add",
+            "args": {
+                "input0": "concat",
+                "input1": "add_1-1-ReshapeNHWCToNCHW-LayoutOptimizer",
+                "name": "add_1",
+                "op": "Add"
+            },
+            "pid": 11,
+            "ts": 1535045464572274,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 28
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "input0": "add_1",
+                "name": "relu2",
+                "op": "Relu"
+            },
+            "pid": 11,
+            "ts": 1535045464572305,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 20
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "input0": "relu2",
+                "input1": "PermConstNCHWToNHWC-LayoutOptimizer",
+                "name": "relu2-0-0-TransposeNCHWToNHWC-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 11,
+            "ts": 1535045464572328,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 25
+        },
+        {
+            "name": "LRN",
+            "args": {
+                "input0": "relu2-0-0-TransposeNCHWToNHWC-LayoutOptimizer",
+                "name": "norm2",
+                "op": "LRN"
+            },
+            "pid": 11,
+            "ts": 1535045464572360,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 30
+        },
+        {
+            "name": "PadV2",
+            "args": {
+                "input2": "PadV2/constant_values/_3",
+                "input0": "norm2",
+                "input1": "Pad/paddings",
+                "name": "PadV2_1",
+                "op": "PadV2"
+            },
+            "pid": 11,
+            "ts": 1535045464572395,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 29
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "input0": "PadV2_1",
+                "input1": "PermConstNHWCToNCHW-LayoutOptimizer",
+                "name": "pool2-0-TransposeNHWCToNCHW-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 11,
+            "ts": 1535045464572430,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 28
+        },
+        {
+            "name": "MaxPool",
+            "args": {
+                "input0": "pool2-0-TransposeNHWCToNCHW-LayoutOptimizer",
+                "name": "pool2",
+                "op": "MaxPool"
+            },
+            "pid": 11,
+            "ts": 1535045464572463,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 35
+        },
+        {
+            "name": "Pad",
+            "args": {
+                "input0": "pool2",
+                "input1": "Pad_2-1-LayoutOptimizer",
+                "name": "Pad_2",
+                "op": "Pad"
+            },
+            "pid": 11,
+            "ts": 1535045464572503,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 32
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "input0": "Pad_2",
+                "input1": "conv3_weight",
+                "name": "convolution_3",
+                "op": "Conv2D"
+            },
+            "pid": 11,
+            "ts": 1535045464572541,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 76
+        },
+        {
+            "name": "Add",
+            "args": {
+                "input0": "convolution_3",
+                "input1": "add_2-1-ReshapeNHWCToNCHW-LayoutOptimizer",
+                "name": "add_2",
+                "op": "Add"
+            },
+            "pid": 11,
+            "ts": 1535045464572624,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 28
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "input0": "add_2",
+                "name": "relu3",
+                "op": "Relu"
+            },
+            "pid": 11,
+            "ts": 1535045464572655,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 19
+        },
+        {
+            "name": "Pad",
+            "args": {
+                "input0": "relu3",
+                "input1": "Pad_2-1-LayoutOptimizer",
+                "name": "Pad_3",
+                "op": "Pad"
+            },
+            "pid": 11,
+            "ts": 1535045464572678,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 26
+        },
+        {
+            "name": "Split",
+            "args": {
+                "input0": "split_5-0-LayoutOptimizer",
+                "input1": "Pad_3",
+                "name": "split_3",
+                "op": "Split"
+            },
+            "pid": 11,
+            "ts": 1535045464572710,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 29
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "input0": "split_3",
+                "input1": "ConstantFolding/split_2-folded-0",
+                "name": "convolution_4",
+                "op": "Conv2D"
+            },
+            "pid": 11,
+            "ts": 1535045464572744,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 71
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "input0": "split_3:1",
+                "input1": "ConstantFolding/split_2-folded-1",
+                "name": "convolution_5",
+                "op": "Conv2D"
+            },
+            "pid": 11,
+            "ts": 1535045464572821,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 67
+        },
+        {
+            "name": "ConcatV2",
+            "args": {
+                "input2": "split_5-0-LayoutOptimizer",
+                "input0": "convolution_4",
+                "input1": "convolution_5",
+                "name": "concat_1",
+                "op": "ConcatV2"
+            },
+            "pid": 11,
+            "ts": 1535045464572894,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 49
+        },
+        {
+            "name": "Add",
+            "args": {
+                "input0": "concat_1",
+                "input1": "add_3-1-ReshapeNHWCToNCHW-LayoutOptimizer",
+                "name": "add_3",
+                "op": "Add"
+            },
+            "pid": 11,
+            "ts": 1535045464572949,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 25
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "input0": "add_3",
+                "name": "relu4",
+                "op": "Relu"
+            },
+            "pid": 11,
+            "ts": 1535045464572978,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 18
+        },
+        {
+            "name": "Pad",
+            "args": {
+                "input0": "relu4",
+                "input1": "Pad_2-1-LayoutOptimizer",
+                "name": "Pad_4",
+                "op": "Pad"
+            },
+            "pid": 11,
+            "ts": 1535045464572999,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 30
+        },
+        {
+            "name": "Split",
+            "args": {
+                "input0": "split_5-0-LayoutOptimizer",
+                "input1": "Pad_4",
+                "name": "split_5",
+                "op": "Split"
+            },
+            "pid": 11,
+            "ts": 1535045464573035,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 25
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "input0": "split_5",
+                "input1": "ConstantFolding/split_4-folded-0",
+                "name": "convolution_6",
+                "op": "Conv2D"
+            },
+            "pid": 11,
+            "ts": 1535045464573069,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 95
+        },
+        {
+            "name": "Conv2D",
+            "args": {
+                "input0": "split_5:1",
+                "input1": "ConstantFolding/split_4-folded-1",
+                "name": "convolution_7",
+                "op": "Conv2D"
+            },
+            "pid": 11,
+            "ts": 1535045464573171,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 91
+        },
+        {
+            "name": "ConcatV2",
+            "args": {
+                "input2": "split_5-0-LayoutOptimizer",
+                "input0": "convolution_6",
+                "input1": "convolution_7",
+                "name": "concat_2",
+                "op": "ConcatV2"
+            },
+            "pid": 11,
+            "ts": 1535045464573268,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 46
+        },
+        {
+            "name": "Add",
+            "args": {
+                "input0": "concat_2",
+                "input1": "add_4-1-ReshapeNHWCToNCHW-LayoutOptimizer",
+                "name": "add_4",
+                "op": "Add"
+            },
+            "pid": 11,
+            "ts": 1535045464573321,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 33
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "input0": "add_4",
+                "name": "relu5",
+                "op": "Relu"
+            },
+            "pid": 11,
+            "ts": 1535045464573357,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 20
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "input0": "relu5",
+                "input1": "PermConstNCHWToNHWC-LayoutOptimizer",
+                "name": "relu5-0-0-TransposeNCHWToNHWC-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 11,
+            "ts": 1535045464573380,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 25
+        },
+        {
+            "name": "PadV2",
+            "args": {
+                "input2": "PadV2/constant_values/_3",
+                "input0": "relu5-0-0-TransposeNCHWToNHWC-LayoutOptimizer",
+                "input1": "Pad/paddings",
+                "name": "PadV2_2",
+                "op": "PadV2"
+            },
+            "pid": 11,
+            "ts": 1535045464573415,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 30
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "input0": "PadV2_2",
+                "input1": "PermConstNHWCToNCHW-LayoutOptimizer",
+                "name": "pool5-0-TransposeNHWCToNCHW-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 11,
+            "ts": 1535045464573451,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 23
+        },
+        {
+            "name": "MaxPool",
+            "args": {
+                "input0": "pool5-0-TransposeNHWCToNCHW-LayoutOptimizer",
+                "name": "pool5",
+                "op": "MaxPool"
+            },
+            "pid": 11,
+            "ts": 1535045464573479,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 41
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "input0": "pool5",
+                "input1": "PermConstNCHWToNHWC-LayoutOptimizer",
+                "name": "pool5-0-0-TransposeNCHWToNHWC-LayoutOptimizer",
+                "op": "Transpose"
+            },
+            "pid": 11,
+            "ts": 1535045464573524,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 23
+        },
+        {
+            "name": "Shape",
+            "args": {
+                "input0": "pool5",
+                "name": "Flatten/flatten/Shape",
+                "op": "Shape"
+            },
+            "pid": 11,
+            "ts": 1535045464573549,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 15
+        },
+        {
+            "name": "DataFormatVecPermute",
+            "args": {
+                "input0": "Flatten/flatten/Shape",
+                "name": "Flatten/flatten/Shape-0-0-VecPermuteNCHWToNHWC-LayoutOptimizer",
+                "op": "DataFormatVecPermute"
+            },
+            "pid": 11,
+            "ts": 1535045464573567,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 14
+        },
+        {
+            "name": "StridedSlice",
+            "args": {
+                "input2": "Flatten/flatten/strided_slice/stack_1",
+                "input3": "Flatten/flatten/strided_slice/stack_1",
+                "input0": "Flatten/flatten/Shape-0-0-VecPermuteNCHWToNHWC-LayoutOptimizer",
+                "input1": "Flatten/flatten/strided_slice/stack",
+                "name": "Flatten/flatten/strided_slice",
+                "op": "StridedSlice"
+            },
+            "pid": 11,
+            "ts": 1535045464573583,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 17
+        },
+        {
+            "name": "Pack",
+            "args": {
+                "input0": "Flatten/flatten/strided_slice",
+                "input1": "split_5/split_dim",
+                "name": "Flatten/flatten/Reshape/shape",
+                "op": "Pack"
+            },
+            "pid": 11,
+            "ts": 1535045464573603,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11
+        },
+        {
+            "name": "Reshape",
+            "args": {
+                "input0": "pool5-0-0-TransposeNCHWToNHWC-LayoutOptimizer",
+                "input1": "Flatten/flatten/Reshape/shape",
+                "name": "Flatten/flatten/Reshape",
+                "op": "Reshape"
+            },
+            "pid": 11,
+            "ts": 1535045464573620,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "MatMul",
+            "args": {
+                "input0": "Flatten/flatten/Reshape",
+                "input1": "dense/kernel",
+                "name": "dense/MatMul",
+                "op": "MatMul"
+            },
+            "pid": 11,
+            "ts": 1535045464573630,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 56
+        },
+        {
+            "name": "BiasAdd",
+            "args": {
+                "input0": "dense/MatMul",
+                "input1": "dense/bias",
+                "name": "dense/BiasAdd",
+                "op": "BiasAdd"
+            },
+            "pid": 11,
+            "ts": 1535045464573690,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 26
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "input0": "dense/BiasAdd",
+                "name": "relu6",
+                "op": "Relu"
+            },
+            "pid": 11,
+            "ts": 1535045464573719,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 18
+        },
+        {
+            "name": "Shape",
+            "args": {
+                "input0": "relu6",
+                "name": "Flatten_1/flatten/Shape",
+                "op": "Shape"
+            },
+            "pid": 11,
+            "ts": 1535045464573740,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11
+        },
+        {
+            "name": "StridedSlice",
+            "args": {
+                "input2": "Flatten/flatten/strided_slice/stack_1",
+                "input3": "Flatten/flatten/strided_slice/stack_1",
+                "input0": "Flatten_1/flatten/Shape",
+                "input1": "Flatten/flatten/strided_slice/stack",
+                "name": "Flatten_1/flatten/strided_slice",
+                "op": "StridedSlice"
+            },
+            "pid": 11,
+            "ts": 1535045464573754,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "Pack",
+            "args": {
+                "input0": "Flatten_1/flatten/strided_slice",
+                "input1": "split_5/split_dim",
+                "name": "Flatten_1/flatten/Reshape/shape",
+                "op": "Pack"
+            },
+            "pid": 11,
+            "ts": 1535045464573766,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 12
+        },
+        {
+            "name": "Reshape",
+            "args": {
+                "input0": "relu6",
+                "input1": "Flatten_1/flatten/Reshape/shape",
+                "name": "Flatten_1/flatten/Reshape",
+                "op": "Reshape"
+            },
+            "pid": 11,
+            "ts": 1535045464573781,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "MatMul",
+            "args": {
+                "input0": "Flatten_1/flatten/Reshape",
+                "input1": "dense_1/kernel",
+                "name": "dense_2/MatMul",
+                "op": "MatMul"
+            },
+            "pid": 11,
+            "ts": 1535045464573789,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 28
+        },
+        {
+            "name": "BiasAdd",
+            "args": {
+                "input0": "dense_2/MatMul",
+                "input1": "dense_1/bias",
+                "name": "dense_2/BiasAdd",
+                "op": "BiasAdd"
+            },
+            "pid": 11,
+            "ts": 1535045464573824,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 21
+        },
+        {
+            "name": "Relu",
+            "args": {
+                "input0": "dense_2/BiasAdd",
+                "name": "relu7",
+                "op": "Relu"
+            },
+            "pid": 11,
+            "ts": 1535045464573849,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 17
+        },
+        {
+            "name": "Shape",
+            "args": {
+                "input0": "relu7",
+                "name": "Flatten_2/flatten/Shape",
+                "op": "Shape"
+            },
+            "pid": 11,
+            "ts": 1535045464573869,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10
+        },
+        {
+            "name": "StridedSlice",
+            "args": {
+                "input2": "Flatten/flatten/strided_slice/stack_1",
+                "input3": "Flatten/flatten/strided_slice/stack_1",
+                "input0": "Flatten_2/flatten/Shape",
+                "input1": "Flatten/flatten/strided_slice/stack",
+                "name": "Flatten_2/flatten/strided_slice",
+                "op": "StridedSlice"
+            },
+            "pid": 11,
+            "ts": 1535045464573882,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 9
+        },
+        {
+            "name": "Pack",
+            "args": {
+                "input0": "Flatten_2/flatten/strided_slice",
+                "input1": "split_5/split_dim",
+                "name": "Flatten_2/flatten/Reshape/shape",
+                "op": "Pack"
+            },
+            "pid": 11,
+            "ts": 1535045464573894,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 12
+        },
+        {
+            "name": "Reshape",
+            "args": {
+                "input0": "relu7",
+                "input1": "Flatten_2/flatten/Reshape/shape",
+                "name": "Flatten_2/flatten/Reshape",
+                "op": "Reshape"
+            },
+            "pid": 11,
+            "ts": 1535045464573908,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        },
+        {
+            "name": "MatMul",
+            "args": {
+                "input0": "Flatten_2/flatten/Reshape",
+                "input1": "dense_2/kernel",
+                "name": "dense_3/MatMul",
+                "op": "MatMul"
+            },
+            "pid": 11,
+            "ts": 1535045464573916,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 28
+        },
+        {
+            "name": "BiasAdd",
+            "args": {
+                "input0": "dense_3/MatMul",
+                "input1": "dense_2/bias",
+                "name": "dense_3/BiasAdd",
+                "op": "BiasAdd"
+            },
+            "pid": 11,
+            "ts": 1535045464573951,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 20
+        },
+        {
+            "name": "Softmax",
+            "args": {
+                "input0": "dense_3/BiasAdd",
+                "name": "prob",
+                "op": "Softmax"
+            },
+            "pid": 11,
+            "ts": 1535045464573974,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 62
+        },
+        {
+            "name": "NoOp",
+            "args": {
+                "name": "_SOURCE",
+                "op": "NoOp"
+            },
+            "pid": 13,
+            "ts": 1535045464570156,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 21
+        },
+        {
+            "name": "_Arg",
+            "args": {
+                "name": "_arg_data_0_0",
+                "op": "_Arg"
+            },
+            "pid": 13,
+            "ts": 1535045464570199,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 25
+        },
+        {
+            "name": "_Retval",
+            "args": {
+                "input0": "prob/_5",
+                "name": "_retval_prob_0_0",
+                "op": "_Retval"
+            },
+            "pid": 13,
+            "ts": 1535045464574168,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "prob",
+            "pid": 11,
+            "ts": 1535045464574036,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 1
+        },
+        {
+            "name": "prob",
+            "pid": 13,
+            "ts": 1535045464574168,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 1
+        }
+    ]
+}
