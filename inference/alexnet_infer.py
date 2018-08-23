@@ -29,50 +29,50 @@ with tf.gfile.GFile(frozen_graph, "rb") as f:
     graph_def = tf.GraphDef()
     graph_def.ParseFromString(f.read())
 
-with tf.Graph().as_default() as graph:
-    tf.import_graph_def(
-        graph_def,
-        input_map=None,
-        return_elements=None,
-        name="",
-        # op_dict=None,
-        # producer_op_list=None
-    )
-
-    y_pred = graph.get_tensor_by_name("prob:0")
-    x = graph.get_tensor_by_name("data:0")
-
-    # Creating the feed_dict that is required to be fed to calculate y_pred
-    feed_dict_testing = {x: x_batch}
-
 with tf.device('/device:GPU:0'):
-    sess = tf.Session(graph=graph)
+	with tf.Graph().as_default() as graph:
+	    tf.import_graph_def(
+		graph_def,
+		input_map=None,
+		return_elements=None,
+		name="",
+		# op_dict=None,
+		# producer_op_list=None
+	    )
 
-    run_metadata = tf.RunMetadata()
-    result = sess.run(y_pred, options=tf.RunOptions(trace_level=tf.RunOptions.FULL_TRACE),
-                      run_metadata=run_metadata, feed_dict=feed_dict_testing)
+	    y_pred = graph.get_tensor_by_name("prob:0")
+	    x = graph.get_tensor_by_name("data:0")
 
-    ProfileOptionBuilder = tf.profiler.ProfileOptionBuilder
+	    # Creating the feed_dict that is required to be fed to calculate y_pred
+	    feed_dict_testing = {x: x_batch}
 
-    # profile the timing of the operations
-    opts = (ProfileOptionBuilder(ProfileOptionBuilder.time_and_memory())
-            .with_file_output("alexnet_profile.out")
-            .build())
+sess = tf.Session(graph=graph, config=tf.ConfigProto(allow_soft_placement=False, log_device_placement=True))
 
-    tf.profiler.profile(
-        graph,
-        run_meta=run_metadata,
-        options=opts)
+run_metadata = tf.RunMetadata()
+result = sess.run(y_pred, options=tf.RunOptions(trace_level=tf.RunOptions.FULL_TRACE),
+	      run_metadata=run_metadata, feed_dict=feed_dict_testing)
 
-    # generate a timeline
-    opts = (ProfileOptionBuilder(ProfileOptionBuilder.time_and_memory()).with_step(0)
-            .with_timeline_output("alexnet_profile.json")
-            .build())
+ProfileOptionBuilder = tf.profiler.ProfileOptionBuilder
 
-    tf.profiler.profile(
-        graph,
-        run_meta=run_metadata,
-        options=opts)
+# profile the timing of the operations
+opts = (ProfileOptionBuilder(ProfileOptionBuilder.time_and_memory())
+    .with_file_output("alexnet_profile.out")
+    .build())
+
+tf.profiler.profile(
+graph,
+run_meta=run_metadata,
+options=opts)
+
+# generate a timeline
+opts = (ProfileOptionBuilder(ProfileOptionBuilder.time_and_memory()).with_step(0)
+    .with_timeline_output("alexnet_profile.json")
+    .build())
+
+tf.profiler.profile(
+graph,
+run_meta=run_metadata,
+options=opts)
 
 # print(result)
 
