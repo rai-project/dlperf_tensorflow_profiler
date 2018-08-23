@@ -1,10 +1,9 @@
 import tensorflow as tf
 import os
 import numpy as np
-import glob
 import cv2
 import sys
-import argparse
+from tensorflow.python.client import timeline
 
 # First, pass the path of the image
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -59,6 +58,12 @@ with tf.Graph().as_default() as graph:
     tf.profiler.profile(
         graph,
         run_meta=run_metadata,
-        options=opts)
+        options=opts).with_step(0).with_timeline_output(filename)
+
+    # Create the Timeline object, and write it to a json file
+    # fetched_timeline = timeline.Timeline(run_metadata.step_stats)
+    # chrome_trace = fetched_timeline.generate_chrome_trace_format()
+    # with open('timeline_01.json', 'w') as f:
+    #     f.write(chrome_trace)
 
     # print(result)
