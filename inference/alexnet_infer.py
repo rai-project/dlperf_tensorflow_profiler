@@ -24,11 +24,13 @@ images = np.multiply(images, 1.0/255.0)
 x_batch = images.reshape(1, image_size, image_size, num_channels)
 
 
-frozen_graph = "../alexnet.pb"
+frozen_graph  = "../alexnet.pb"
 with tf.device('/device:GPU:0'):
+
 	with tf.gfile.GFile(frozen_graph, "rb") as f:
 	    graph_def = tf.GraphDef()
 	    graph_def.ParseFromString(f.read())
+
 
 	with tf.Graph().as_default() as graph:
 	    tf.import_graph_def(
@@ -46,39 +48,40 @@ with tf.device('/device:GPU:0'):
 	    # Creating the feed_dict that is required to be fed to calculate y_pred
 	    feed_dict_testing = {x: x_batch}
 
-sess = tf.Session(graph=graph, config=tf.ConfigProto(allow_soft_placement=False, log_device_placement=False, gpu_options = tf.GPUOptions(force_gpu_compatible=True)))
+	sess = tf.Session(graph=graph, config=tf.ConfigProto(allow_soft_placement=False, log_device_placement=False, gpu_options = tf.GPUOptions(force_gpu_compatible=True)))
 
-run_metadata = tf.RunMetadata()
-result = sess.run(y_pred, feed_dict=feed_dict_testing)
-result = sess.run(y_pred, options=tf.RunOptions(trace_level=tf.RunOptions.FULL_TRACE),
-	      run_metadata=run_metadata, feed_dict=feed_dict_testing)
-# Create the Timeline object, and write it to a json
-tl = timeline.Timeline(run_metadata.step_stats)
-ctf = tl.generate_chrome_trace_format(show_dataflow=True, show_memory=True)
-with open('timeline.json', 'w') as f:
-	f.write(ctf)
+	result = sess.run(y_pred, feed_dict=feed_dict_testing)
+	run_metadata = tf.RunMetadata()
+	result = sess.run(y_pred, options=tf.RunOptions(trace_level=tf.RunOptions.FULL_TRACE),
+		      run_metadata=run_metadata, feed_dict=feed_dict_testing)
+	# Create the Timeline object, and write it to a json
+	tl = timeline.Timeline(run_metadata.step_stats)
+	ctf = tl.generate_chrome_trace_format(show_dataflow=True, show_memory=True)
+	with open('timeline.json', 'w') as f:
+		f.write(ctf)
 
-ProfileOptionBuilder = tf.profiler.ProfileOptionBuilder
+	ProfileOptionBuilder = tf.profiler.ProfileOptionBuilder
 
-# profile the timing of the operations
-opts = (ProfileOptionBuilder(ProfileOptionBuilder.time_and_memory())
-    .select(['accelerator_micros', 'micros', 'bytes', 'float_ops'])
-    .with_file_output("alexnet_profile.out")
-    .build())
+	# profile the timing of the operations
+	opts = (ProfileOptionBuilder(ProfileOptionBuilder.time_and_memory())
+	    .select(['accelerator_micros', 'micros', 'device', 'bytes', 'float_ops'])
+	    .with_file_output("alexnet_profile.out")
+	    .build())
 
-tf.profiler.profile(
-	graph,
-	cmd='code',
-	run_meta=run_metadata,
-	options=opts)
+	tf.profiler.profile(
+		graph,
+		cmd='code',
+		run_meta=run_metadata,
+		options=opts)
 
-# generate a timeline
-opts = (ProfileOptionBuilder(ProfileOptionBuilder.time_and_memory()).with_step(0)
-    .select(['accelerator_micros', 'micros', 'bytes', 'float_ops'])
-    .with_timeline_output("alexnet_profile.json")
-    .build())
+	# generate a timeline
+	opts = (ProfileOptionBuilder(ProfileOptionBuilder.time_and_memory())
+	    .with_step(0)
+	    .select(['accelerator_micros', 'micros', 'bytes', 'float_ops'])
+	    .with_timeline_output("alexnet_profile.json")
+	    .build())
 
-tf.profiler.profile(
+	tf.profiler.profile(
 graph,
 run_meta=run_metadata,
 options=opts)
